@@ -6,7 +6,7 @@
 %define	pdir	Email
 %define	pnam	Store-Thread
 Summary:	Email::Store::Thread - Store threading information for a mail
-#Summary(pl):	
+Summary(pl):	Email::Store::Thread - przechowywanie informacji o w±tkowaniu dla poczty
 Name:		perl-Email-Store-Thread
 Version:	1.1
 Release:	1
@@ -25,20 +25,29 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This adds to a mail the concept of a B<thread container>. A thread
+This adds to a mail the concept of a thread container. A thread
 container is a node in a tree which represents the thread of an email
-conversation. It plugs into the indexing process and works out where in
-the tree the mail belongs; you can then ask a mail for its C<container>,
-a container for its C<message>, and for its C<parent>, C<child> and
-C<sibling> containers, which are used to navigate the thread tree.
-There's also a C<root> container which represents the top message in
-the tree.
+conversation. It plugs into the indexing process and works out where
+in the tree the mail belongs; you can then ask a mail for its
+container, a container for its message, and for its parent, child and
+sibling containers, which are used to navigate the thread tree.
+There's also a root container which represents the top message in the
+tree.
 
-This is distributed separately from the main C<Email::Store> distribution
-as it tends to slow down indexing somewhat.
+This is distributed separately from the main Email::Store distribution
+as as it tends to slow down indexing somewhat.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ dodaje do poczty ideê kontenera w±tków. Kontener w±tków to
+wêze³ w drzewie reprezentuj±cy w±tek korespondencji pocztowej. W³±cza
+siê do procesu indeksowania i dzia³a tam, gdzie w drzewie nale¿y dany
+list; mo¿na odpytaæ list o jego kontener, kontener jego wiadomo¶ci
+oraz o kontenery rodzica, potomka i rodzeñstwa, u¿ywane do nawigacji w
+drzewie w±tków. Jest tak¿e kontener "root" reprezentuj±cy górn±
+wiadomo¶æ w drzewie.
+
+Modu³ jest rozprowadzany jako wydzielony z dystrybucji Email::Store,
+jako ¿e wydaje siê zwalniaæ trochê indeksowanie.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
