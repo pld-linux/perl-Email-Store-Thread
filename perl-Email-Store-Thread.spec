@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Email
 %define	pnam	Store-Thread
-Summary:	Email::Store::Thread - Store threading information for a mail
+Summary:	Email::Store::Thread - store threading information for a mail
 Summary(pl):	Email::Store::Thread - przechowywanie informacji o w±tkowaniu dla poczty
 Name:		perl-Email-Store-Thread
 Version:	1.1
