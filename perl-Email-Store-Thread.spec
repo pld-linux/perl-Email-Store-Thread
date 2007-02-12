@@ -6,7 +6,7 @@
 %define	pdir	Email
 %define	pnam	Store-Thread
 Summary:	Email::Store::Thread - store threading information for a mail
-Summary(pl):	Email::Store::Thread - przechowywanie informacji o w±tkowaniu dla poczty
+Summary(pl.UTF-8):   Email::Store::Thread - przechowywanie informacji o wÄ…tkowaniu dla poczty
 Name:		perl-Email-Store-Thread
 Version:	1.1
 Release:	1
@@ -37,17 +37,17 @@ tree.
 This is distributed separately from the main Email::Store distribution
 as as it tends to slow down indexing somewhat.
 
-%description -l pl
-Ten modu³ dodaje do poczty ideê kontenera w±tków. Kontener w±tków to
-wêze³ w drzewie reprezentuj±cy w±tek korespondencji pocztowej. W³±cza
-siê do procesu indeksowania i dzia³a tam, gdzie w drzewie nale¿y dany
-list; mo¿na odpytaæ list o jego kontener, kontener jego wiadomo¶ci
-oraz o kontenery rodzica, potomka i rodzeñstwa, u¿ywane do nawigacji w
-drzewie w±tków. Jest tak¿e kontener "root" reprezentuj±cy górn±
-wiadomo¶æ w drzewie.
+%description -l pl.UTF-8
+Ten moduÅ‚ dodaje do poczty ideÄ™ kontenera wÄ…tkÃ³w. Kontener wÄ…tkÃ³w to
+wÄ™zeÅ‚ w drzewie reprezentujÄ…cy wÄ…tek korespondencji pocztowej. WÅ‚Ä…cza
+siÄ™ do procesu indeksowania i dziaÅ‚a tam, gdzie w drzewie naleÅ¼y dany
+list; moÅ¼na odpytaÄ‡ list o jego kontener, kontener jego wiadomoÅ›ci
+oraz o kontenery rodzica, potomka i rodzeÅ„stwa, uÅ¼ywane do nawigacji w
+drzewie wÄ…tkÃ³w. Jest takÅ¼e kontener "root" reprezentujÄ…cy gÃ³rnÄ…
+wiadomoÅ›Ä‡ w drzewie.
 
-Modu³ jest rozprowadzany jako wydzielony z dystrybucji Email::Store,
-jako ¿e wydaje siê zwalniaæ trochê indeksowanie.
+ModuÅ‚ jest rozprowadzany jako wydzielony z dystrybucji Email::Store,
+jako Å¼e wydaje siÄ™ zwalniaÄ‡ trochÄ™ indeksowanie.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
