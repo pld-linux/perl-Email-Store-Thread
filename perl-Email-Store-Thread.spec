@@ -6,7 +6,7 @@
 %define	pdir	Email
 %define	pnam	Store-Thread
 Summary:	Email::Store::Thread - store threading information for a mail
-Summary(pl.UTF-8):   Email::Store::Thread - przechowywanie informacji o wątkowaniu dla poczty
+Summary(pl.UTF-8):	Email::Store::Thread - przechowywanie informacji o wątkowaniu dla poczty
 Name:		perl-Email-Store-Thread
 Version:	1.1
 Release:	1
