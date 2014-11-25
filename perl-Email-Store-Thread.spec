@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests		# perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Email
 %define	pnam	Store-Thread
+%include	/usr/lib/rpm/macros.perl
 Summary:	Email::Store::Thread - store threading information for a mail
 Summary(pl.UTF-8):	Email::Store::Thread - przechowywanie informacji o wątkowaniu dla poczty
 Name:		perl-Email-Store-Thread
@@ -14,12 +14,13 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e7ecb1510e20c061471227e00682e26d
+URL:		http://search.cpan.org/dist/Email-Store-Thread/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(Mail::Thread) >= 2.5
 BuildRequires:	perl-Email-Folder
 BuildRequires:	perl-Email-Store
-BuildRequires:	perl(Mail::Thread) >= 2.5
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
